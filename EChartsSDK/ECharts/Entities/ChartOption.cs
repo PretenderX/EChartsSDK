@@ -87,8 +87,6 @@ namespace ECharts.Entities
 
         public object singleAxis { get; set; }
 
-        public object visualMap { get; set; }
-
         public IList<Calendar> calendar { get; set; }
 
         public ChartOption Calendar(params Calendar[] values)
@@ -206,15 +204,7 @@ namespace ECharts.Entities
         {
             this.title = values.ToList();
             return this;
-        }
-
- 
-        public ChartOption VisualMap(params VisualMap[] values)
-        {
-            this.visualMap = values.ToList();
-            return this;
-        }
-        
+        }   
 
         public ChartOption XAxis(params Axis[] values)
         {
